@@ -22,7 +22,7 @@
         }
         
         // 診断結果表示エリアの作成
-       removeAllchildren(resultDivided);
+       removeAllChildren(resultDivided);
        const header = document.createElement('h3');
        header.innerText = '診断結果';
        resultDivided.appendChild(header);
@@ -33,11 +33,11 @@
        resultDivided.appendchild(paragraph);
         
         //ツィートエリアの作成
-        removeAllchildren(tweetDivided);
+        removeAllChildren(tweetDivided);
         const anchor = document.createElement('a');
         const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%84%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D&text='
         + encodeURIComponent(result);
-        anchor.setAttribue('href', hrefValue);
+        anchor.setAttribuete('href', hrefValue);
         anchor.className = 'twitter-hashtag-button';
         anchor.innerText = 'Tweet #%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%84%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D';
         tweetDivided.appendChild(anchor);
@@ -87,7 +87,7 @@
         let result = answers[index];
         
         result = result.replace(/{userName}/g, userName);
-        return result
+        return result;
     }
     
     //テストコード

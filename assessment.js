@@ -30,7 +30,7 @@
        const paragraph = document.createElement('p');
        const result = assessment(userName);
        paragraph.innerText = result;
-       resultDivided.appendchild(paragraph);
+       resultDivided.appendChild(paragraph);
         
         //ツィートエリアの作成
         removeAllChildren(tweetDivided);
